@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt-br">
+    <meta charset="UTF-8">
+    <title>Contatos</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./produtos.css">
+    <link rel="stylesheet" href="./contato.css">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+
+            <h1><img src="./logo.png" alt="logo da barbearia"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input id="nomesobrenome" type="text" class="input-padrao" required />
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" type="tel" class="input-padrao" placeholder="xxxx@xxxx.com" required />
+
+            <label for="email">E-mail</label>
+            <input id="email" type="email" class="input-padrao" placeholder="(xx) xxxx.xxxx" required />
+
+            <label for="comentario">Comentario</label>
+            <textarea cols="70" rows="10" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
+                        id="radio-telefone">Telefone</label>
+
+                <label for="radio-whats"><input type="radio" name="contato" vlaue="whatssap"
+                        id="radio-whats">Whatssap</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Turno</legend>
+                <select>
+                    <option>Manha</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </fieldset>
+
+            <label> <input type="checkbox" class="checkbox">Newllester?</label>
+
+
+
+            <input class="btn-submit" type="submit" value="Enviar Formulario">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Seg</td>
+                    <td>08:00-09:00</td>
+                </tr>
+                <tr>
+                    <td>Ter</td>
+                    <td>08:00-09:00</td>
+                </tr>
+
+            </tbody>
+
+
+        </table>
+    </main>
+    <footer>
+        <img src="logo-branco.png">
+        <p class="copyright">&copy; Copyright</p>
+    </footer>
+</body>
+
+</html>
